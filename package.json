@@ -1,0 +1,16 @@
+{
+  "name": "chrome-dev-tools",
+  "version": "1.0.0",
+  "description": "ChromeDevTools.com",
+  "main": "index.js",
+  "scripts": {
+    "preview" : "http-server . -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@getcrx:getcrx/ChromeDevTools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
