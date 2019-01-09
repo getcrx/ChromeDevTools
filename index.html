@@ -16,23 +16,31 @@
       margin: 0;
       display: flex;
       flex-direction: column;
+      height: 100vh;
     }
     .header{
-      --headerHeight: 60px;
+      --headerHeight: 30px;
       height: var(--headerHeight);
       line-height: var(--headerHeight);
       background-color: rgba(240, 248, 255, 0.6);
       padding: 30px;
+      font-weight: bold;
+      color: cornflowerblue;
     }
     .main{
       flex: 1;
       overflow: overlay;
     }
     .poster{
-      margin: 60px;
+      margin: 60px auto;
+      border: 1px solid #eee;
+      width: 60vw;
+      border-radius: 10px;
+      overflow: hidden;
     }
     .noodle{
       width: 100%;
+      vertical-align: bottom; /* 去除底部空隙*/
     }
   </style>
   <script>
@@ -60,7 +68,26 @@
             alt="一碗面的成本，学会断点调试">
         </a>
       </div>
+
+      <div class="poster">
+        <a href="https://item.taobao.com/item.htm?id=542013860329">
+          <img class="noodle"
+            title="淘宝店铺"
+            src="https://img.alicdn.com/imgextra/i3/759847060/O1CN019xfmvO221WiOzKHFX_!!759847060.png"
+            alt="捉虫记">
+        </a>
+      </div>
+
+      <div class="poster">
+        <a href="https://item.taobao.com/item.htm?id=542013860329">
+          <img class="noodle"
+            title="淘宝店铺"
+            src="https://img.alicdn.com/imgextra/i4/759847060/O1CN01sAHxZG221WiRmuVwO_!!759847060.jpg"
+            alt="Chrome Extension Develop">
+        </a>
+      </div>
     </div>
+
   </div>
 </body>
 </html>
