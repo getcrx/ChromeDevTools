@@ -1,25 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="zh-CN">
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>学会断点调试</title>
   <meta name="description" content="一碗面的成本，学会断点调试">
-  <meta name="keywords" content="chrome dev tools,断点调试">
+  <meta name="keywords" content="前端，断点调试，chrome dev tools">
   <style>
-    body{
-      margin:0;
+    body {
+      margin: 0;
       color: #fff;
       background: #333;
     }
-    .container{
+
+    .container {
       margin: 0;
       display: flex;
       flex-direction: column;
       height: 100vh;
     }
-    .header{
+
+    .header {
       background-color: rgba(240, 248, 255, 0.6);
       padding: 16px;
       font-weight: bold;
@@ -28,39 +31,40 @@
       font-size: 21px;
       line-height: 1.5;
     }
-    .main{
+
+    .main {
       flex: 1;
       overflow: overlay;
     }
-    .poster{
+
+    .poster {
       margin: 60px auto;
       border: 1px solid #eee;
       width: 60vw;
       border-radius: 10px;
       overflow: hidden;
     }
-    .noodle{
+
+    .noodle {
       width: 100%;
-      vertical-align: bottom; /* 去除底部空隙*/
+      vertical-align: bottom;
+      /* 去除底部空隙*/
     }
 
-    ::-webkit-scrollbar-track
-    {
-      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       border-radius: 10px;
       background-color: #F5F5F5;
     }
 
-    ::-webkit-scrollbar
-    {
+    ::-webkit-scrollbar {
       width: 12px;
       background-color: #F5F5F5;
     }
 
-    ::-webkit-scrollbar-thumb
-    {
+    ::-webkit-scrollbar-thumb {
       border-radius: 10px;
-      box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
       background-color: #555;
     }
   </style>
@@ -74,6 +78,7 @@
     })();
   </script>
 </head>
+
 <body>
   <div class="container">
     <div class="header">
@@ -83,19 +88,14 @@
     <div class="main">
 
       <div class="poster">
-        <video
-          controls="controls"
-          autoplay="autoplay"
-          style="width:100%"
-          src="http://v.weishi.qq.com/shg_648834871_1047_aee0ba6c5d2a4ca2bb321538fceevide.f20.mp4"
-          preload="auto">
+        <video controls="controls" autoplay="autoplay" style="width:100%"
+          src="http://v.weishi.qq.com/shg_648834871_1047_aee0ba6c5d2a4ca2bb321538fceevide.f20.mp4" preload="auto">
         </video>
       </div>
 
       <div class="poster">
         <a href="https://item.taobao.com/item.htm?id=542013860329">
-          <img class="noodle"
-            title="淘宝店铺"
+          <img class="noodle" title="淘宝店铺"
             src="https://img.alicdn.com/imgextra/i1/759847060/TB2EF2eshxmpuFjSZFNXXXrRXXa-759847060.png"
             alt="一碗面的成本，学会断点调试">
         </a>
@@ -103,25 +103,22 @@
 
       <div class="poster">
         <a href="https://item.taobao.com/item.htm?id=542013860329">
-          <img class="noodle"
-            title="淘宝店铺"
-            src="https://img.alicdn.com/imgextra/i3/759847060/O1CN019xfmvO221WiOzKHFX_!!759847060.png"
-            alt="捉虫记">
+          <img class="noodle" title="淘宝店铺"
+            src="https://img.alicdn.com/imgextra/i3/759847060/O1CN019xfmvO221WiOzKHFX_!!759847060.png" alt="捉虫记">
         </a>
       </div>
 
       <div class="poster">
         <a href="https://item.taobao.com/item.htm?spm=0.7095261.0.0.6bb01debOInBtV&id=586673579242">
-          <img class="noodle"
-            title="淘宝店铺 - 扩展开发技术"
+          <img class="noodle" title="淘宝店铺 - 扩展开发技术"
             src="https://img.alicdn.com/imgextra/i4/759847060/O1CN01sAHxZG221WiRmuVwO_!!759847060.jpg"
             alt="Chrome Extension Develop">
         </a>
       </div>
 
-
     </div>
 
   </div>
 </body>
+
 </html>
